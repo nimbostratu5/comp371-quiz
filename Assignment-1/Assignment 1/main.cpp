@@ -1,27 +1,23 @@
 /*
 *	COMP 371 - QUIZ 1
-*
 *	NOOR ALALI - 26797180
 *
-* 	VERSION 1.0
+*	
+*	
+*	
+*	
+*	
 *
-* 	N.B.: I DID NOT FULLY UNDERSTAND POINT 3.(a) DIMENSIONS CRITERIA OR THE AMBIGUOUS IMAGE BELOW IT.
-*		  ARE THE DIMENSIONS GIVEN FOR THE CUBE OR THE MODEL FOR EACH LETTER?
-*		  HOWEVER, IT IS A TRIVIAL MATTER TO ALTER INITIAL DIMENSIONS OF THE CUBE AND/OR USE SCALING TO ACHIEVE
-*		  A DESIRED SIZE. THEREFORE, I USED (0.5,0.25,1) AS THE INITIAL CUBE DIMENSIONS AND SCALED LATER ON.
-*		  
-
-
 *	CONTROLS:
-
 *		VIEW SELECTION CONTROLS
 *		==============================================================
 *
 *       ESCAPE              : QUIT PROGRAM
 *
 *		==============================================================
-*		1 - 6 				: SCROLL THROUGH THE LETTERS
-
+*
+*		1 - 6				: SCROLL THROUGH THE LETTERS
+*
 *		X					: MOVE NEGATIVE Y-DIRECTION
 *
 *		SPACE				: MOVE POSITIVE Y-DIRECTION
@@ -64,7 +60,7 @@
 *		MODEL CONTROL
 *		ENTER EITHER 1, 2, 3, 4 OR 5 TO SELECT MODELS - 0 WILL SELECT ALL MODELS - LEFT MOUSE CLICK WILL DESELECT ALL MODELS
 *		====================================================================================================================
-*		
+*
 *		W						: MOVE MODEL IN +Z DIRECTION
 *
 *		S						: MOVE MODEL IN -Z DIRECTION
@@ -105,7 +101,10 @@
 *
 *
 *		ARROW UP/DOWN/LEFT/RIGHT: ORIENTATION CONTROL
+
 */
+
+
 
 #include <iostream>
 #include <algorithm>
@@ -331,53 +330,53 @@ int main()
 		// cube made of 12 triangles
 
 		// postion						// color
-		glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.5f, 0.5f, 0.5f),
-		glm::vec3(0.1f, 0.0f, 0.0f), glm::vec3(0.5f, 0.5f, 0.5f),
-		glm::vec3(0.1f, 0.05f, 0.0f), glm::vec3(0.4f, 0.4f, 0.4f),
+		glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.5f, 0.5f, 1.0f),
+		glm::vec3(0.1f, 0.0f, 0.0f), glm::vec3(0.5f, 0.5f, 1.0f),
+		glm::vec3(0.1f, 0.05f, 0.0f), glm::vec3(0.4f, 0.4f, 1.0f),
 
-		glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.5f, 0.5f, 0.5f),
-		glm::vec3(0.1f, 0.05f, 0.0f), glm::vec3(0.4f, 0.4f, 0.4f),
-		glm::vec3(0.0f, 0.05f, 0.0f), glm::vec3(0.25f, 0.25f, 0.25f),
+		glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.5f, 0.5f, 1.0f),
+		glm::vec3(0.1f, 0.05f, 0.0f), glm::vec3(0.4f, 0.4f, 1.0f),
+		glm::vec3(0.0f, 0.05f, 0.0f), glm::vec3(0.25f, 0.25f, 1.0f),
 
-		glm::vec3(0.1f, 0.0f, 0.0f), glm::vec3(0.5f, 0.5f, 0.5f),
-		glm::vec3(0.1f, 0.0f, 0.025f), glm::vec3(0.7f, 0.7f, 0.7f),
-		glm::vec3(0.1f, 0.05f, 0.0f), glm::vec3(0.4f, 0.4f, 0.4f),
+		glm::vec3(0.1f, 0.0f, 0.0f), glm::vec3(0.5f, 0.5f, 1.0f),
+		glm::vec3(0.1f, 0.0f, 0.025f), glm::vec3(0.7f, 0.7f, 1.0f),
+		glm::vec3(0.1f, 0.05f, 0.0f), glm::vec3(0.4f, 0.4f, 1.0f),
 
-		glm::vec3(0.1f, 0.05f, 0.0f), glm::vec3(0.4f, 0.4f, 0.4f),
-		glm::vec3(0.1f, 0.0f, 0.025f), glm::vec3(0.7f, 0.7f, 0.7f),
-		glm::vec3(0.1f, 0.05f, 0.025f), glm::vec3(0.7f, 0.7f, 0.7f),
+		glm::vec3(0.1f, 0.05f, 0.0f), glm::vec3(0.4f, 0.4f, 1.0f),
+		glm::vec3(0.1f, 0.0f, 0.025f), glm::vec3(0.7f, 0.7f, 1.0f),
+		glm::vec3(0.1f, 0.05f, 0.025f), glm::vec3(0.7f, 0.7f, 1.0f),
 
-		glm::vec3(0.0f, 0.0f, 0.025f), glm::vec3(0.20f, 0.20f, 0.20f),
-		glm::vec3(0.1f, 0.05f, 0.025f), glm::vec3(0.7f, 0.7f, 0.7f),
-		glm::vec3(0.1f, 0.0f, 0.025f), glm::vec3(0.7f, 0.7f, 0.7f),
+		glm::vec3(0.0f, 0.0f, 0.025f), glm::vec3(0.20f, 0.20f, 1.0f),
+		glm::vec3(0.1f, 0.05f, 0.025f), glm::vec3(0.7f, 0.7f, 1.0f),
+		glm::vec3(0.1f, 0.0f, 0.025f), glm::vec3(0.7f, 0.7f, 1.0f),
 
-		glm::vec3(0.0f, 0.0f, 0.025f), glm::vec3(0.20f, 0.20f, 0.20f),
-		glm::vec3(0.0f, 0.05f, 0.025f), glm::vec3(0.4f, 0.4f, 0.4f),
-		glm::vec3(0.1f, 0.05f, 0.025f), glm::vec3(0.7f, 0.7f, 0.7f),
+		glm::vec3(0.0f, 0.0f, 0.025f), glm::vec3(0.20f, 0.20f, 1.0f),
+		glm::vec3(0.0f, 0.05f, 0.025f), glm::vec3(0.4f, 0.4f, 1.0f),
+		glm::vec3(0.1f, 0.05f, 0.025f), glm::vec3(0.7f, 0.7f, 1.0f),
 
-		glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.5f, 0.5f, 0.5f),
-		glm::vec3(0.0f, 0.05f, 0.0f), glm::vec3(0.25f, 0.25f, 0.25f),
-		glm::vec3(0.0f, 0.0f, 0.025f), glm::vec3(0.20f, 0.20f, 0.20f),
+		glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.5f, 0.5f, 1.0f),
+		glm::vec3(0.0f, 0.05f, 0.0f), glm::vec3(0.25f, 0.25f, 1.0f),
+		glm::vec3(0.0f, 0.0f, 0.025f), glm::vec3(0.20f, 0.20f, 1.0f),
 
-		glm::vec3(0.0f, 0.05f, 0.0f), glm::vec3(0.25f, 0.25f, 0.25f),
-		glm::vec3(0.0f, 0.05f, 0.025f), glm::vec3(0.4f, 0.4f, 0.4f),
-		glm::vec3(0.0f, 0.0f, 0.025f), glm::vec3(0.20f, 0.20f, 0.20f),
+		glm::vec3(0.0f, 0.05f, 0.0f), glm::vec3(0.25f, 0.25f, 1.0f),
+		glm::vec3(0.0f, 0.05f, 0.025f), glm::vec3(0.4f, 0.4f, 1.0f),
+		glm::vec3(0.0f, 0.0f, 0.025f), glm::vec3(0.20f, 0.20f, 1.0f),
 
-		glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.5f, 0.5f, 0.5f),
-		glm::vec3(0.1f, 0.0f, 0.025f), glm::vec3(0.7f, 0.7f, 0.7f),
-		glm::vec3(0.1f, 0.0f, 0.0f), glm::vec3(0.5f, 0.5f, 0.5f),
+		glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.5f, 0.5f, 1.0f),
+		glm::vec3(0.1f, 0.0f, 0.025f), glm::vec3(0.7f, 0.7f, 1.0f),
+		glm::vec3(0.1f, 0.0f, 0.0f), glm::vec3(0.5f, 0.5f, 1.0f),
 
-		glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.5f, 0.5f, 0.5f),
-		glm::vec3(0.0f, 0.0f, 0.025f), glm::vec3(0.20f, 0.20f, 0.20f),
-		glm::vec3(0.1f, 0.0f, 0.025f), glm::vec3(0.7f, 0.7f, 0.7f),
+		glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.5f, 0.5f, 1.0f),
+		glm::vec3(0.0f, 0.0f, 0.025f), glm::vec3(0.20f, 0.20f, 1.0f),
+		glm::vec3(0.1f, 0.0f, 0.025f), glm::vec3(0.7f, 0.7f, 1.0f),
 
-		glm::vec3(0.0f, 0.05f, 0.0f), glm::vec3(0.25f, 0.25f, 0.25f),
-		glm::vec3(0.1f, 0.05f, 0.0f), glm::vec3(0.4f, 0.4f, 0.4f),
-		glm::vec3(0.1f, 0.05f, 0.025f), glm::vec3(0.7f, 0.7f, 0.7f),
+		glm::vec3(0.0f, 0.05f, 0.0f), glm::vec3(0.25f, 0.25f, 1.0f),
+		glm::vec3(0.1f, 0.05f, 0.0f), glm::vec3(0.4f, 0.4f, 1.0f),
+		glm::vec3(0.1f, 0.05f, 0.025f), glm::vec3(0.7f, 0.7f, 1.0f),
 
-		glm::vec3(0.0f, 0.05f, 0.0f), glm::vec3(0.25f, 0.25f, 0.25f),
-		glm::vec3(0.1f, 0.05f, 0.025f), glm::vec3(0.7f, 0.7f, 0.7f),
-		glm::vec3(0.0f, 0.05f, 0.025f), glm::vec3(0.4f, 0.4f, 0.4f),
+		glm::vec3(0.0f, 0.05f, 0.0f), glm::vec3(0.25f, 0.25f, 1.0f),
+		glm::vec3(0.1f, 0.05f, 0.025f), glm::vec3(0.7f, 0.7f, 1.0f),
+		glm::vec3(0.0f, 0.05f, 0.025f), glm::vec3(0.4f, 0.4f, 1.0f),
 	};
 
 	const float axisLineLength = 5 * (10.0f / (float)numGridLines);  // axis lines are the length of n grid squares
@@ -1543,7 +1542,7 @@ void scroll_callback(GLFWwindow* window, double xoffset, double yoffset)
 void model_9() {
 	
 	//vertical left 1
-	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 4.0f, 0.5f));
+	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 4.0f, 2.0f));
 	translationMatrix = glm::translate(glm::mat4(1.0f), glm::vec3(-1.36f, 0.21f, 0.0f));
 	partMatrix = translationMatrix * scalingMatrix;
 	worldMatrix = modelTranslationMatrix * modelScalingMatrix * rotationMatrix * partMatrix;
@@ -1551,7 +1550,7 @@ void model_9() {
 	glDrawArrays(GL_TRIANGLES, 0, 36);
 
 	//top 
-	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(2.0f, 2.0f, 0.5f));
+	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(2.0f, 2.0f, 2.0f));
 	translationMatrix = glm::translate(glm::mat4(1.0f), glm::vec3(-1.25f, 0.36f, 0.0f));
 	partMatrix = translationMatrix * scalingMatrix;
 	worldMatrix = modelTranslationMatrix * modelScalingMatrix * rotationMatrix * partMatrix;
@@ -1559,7 +1558,7 @@ void model_9() {
 	glDrawArrays(GL_TRIANGLES, 0, 36);
 
 	//middle 
-	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(2.0f, 2.0f, 0.5f));
+	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(2.0f, 2.0f, 2.0f));
 	translationMatrix = glm::translate(glm::mat4(1.0f), glm::vec3(-1.25f, 0.16f, 0.0f));
 	partMatrix = translationMatrix * scalingMatrix;
 	worldMatrix = modelTranslationMatrix * modelScalingMatrix * rotationMatrix * partMatrix;
@@ -1567,7 +1566,7 @@ void model_9() {
 	glDrawArrays(GL_TRIANGLES, 0, 36);
 
 	//vertical right 1
-	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 4.0f, 0.5f));
+	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 4.0f, 2.0f));
 	translationMatrix = glm::translate(glm::mat4(1.0f), glm::vec3(-1.04f, 0.21f, 0.0f));
 	partMatrix = translationMatrix * scalingMatrix;
 	worldMatrix = modelTranslationMatrix * modelScalingMatrix * rotationMatrix * partMatrix;
@@ -1575,7 +1574,7 @@ void model_9() {
 	glDrawArrays(GL_TRIANGLES, 0, 36);
 
 	//vertical right 2
-	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 4.0f, 0.5f));
+	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 4.0f, 2.0f));
 	translationMatrix = glm::translate(glm::mat4(1.0f), glm::vec3(-1.04f, 0.0f, 0.0f));
 	partMatrix = translationMatrix * scalingMatrix;
 	worldMatrix = modelTranslationMatrix * modelScalingMatrix * rotationMatrix * partMatrix;
@@ -1583,7 +1582,7 @@ void model_9() {
 	glDrawArrays(GL_TRIANGLES, 0, 36);
 
 	//bottom 
-	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(2.6f, 2.0f, 0.5f));
+	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(2.6f, 2.0f, 2.0f));
 	translationMatrix = glm::translate(glm::mat4(1.0f), glm::vec3(-1.31f, 0.0f, 0.0f));
 	partMatrix = translationMatrix * scalingMatrix;
 	worldMatrix = modelTranslationMatrix * modelScalingMatrix * rotationMatrix * partMatrix;
@@ -1602,7 +1601,7 @@ void model_A0() {
 	// beginning of letter A0
 
 	//vertical left 1
-	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 4.0f, 0.5f));
+	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 4.0f, 2.0f));
 	translationMatrix = glm::translate(glm::mat4(1.0f), glm::vec3(-0.89, 0.0f, 0.0f));
 	partMatrix = translationMatrix * scalingMatrix;
 	worldMatrix = modelTranslationMatrix * modelScalingMatrix * rotationMatrix * partMatrix;
@@ -1610,7 +1609,7 @@ void model_A0() {
 	glDrawArrays(GL_TRIANGLES, 0, 36);
 
 	//vertical left 2
-	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 4.0f, 0.5f));
+	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 4.0f, 2.0f));
 	translationMatrix = glm::translate(glm::mat4(1.0f), glm::vec3(-0.89f, 0.21f, 0.0f));
 	partMatrix = translationMatrix * scalingMatrix;
 	worldMatrix = modelTranslationMatrix * modelScalingMatrix * rotationMatrix * partMatrix;
@@ -1618,7 +1617,7 @@ void model_A0() {
 	glDrawArrays(GL_TRIANGLES, 0, 36);
 
 	//top 
-	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(2.0f, 2.0f, 0.5f));
+	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(2.0f, 2.0f, 2.0f));
 	translationMatrix = glm::translate(glm::mat4(1.0f), glm::vec3(-0.79f, 0.36f, 0.0f));
 	partMatrix = translationMatrix * scalingMatrix;
 	worldMatrix = modelTranslationMatrix * modelScalingMatrix * rotationMatrix * partMatrix;
@@ -1626,7 +1625,7 @@ void model_A0() {
 	glDrawArrays(GL_TRIANGLES, 0, 36);
 
 	//middle 
-	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(2.0f, 2.0f, 0.5f));
+	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(2.0f, 2.0f, 2.0f));
 	translationMatrix = glm::translate(glm::mat4(1.0f), glm::vec3(-0.79f, 0.16f, 0.0f));
 	partMatrix = translationMatrix * scalingMatrix;
 	worldMatrix = modelTranslationMatrix * modelScalingMatrix * rotationMatrix * partMatrix;
@@ -1634,7 +1633,7 @@ void model_A0() {
 	glDrawArrays(GL_TRIANGLES, 0, 36);
 
 	//vertical right 1
-	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 4.0f, 0.5f));;
+	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 4.0f, 2.0f));;
 	translationMatrix = glm::translate(glm::mat4(1.0f), glm::vec3(-0.58f, 0.0f, 0.0f));
 	partMatrix = translationMatrix * scalingMatrix;
 	worldMatrix = modelTranslationMatrix * modelScalingMatrix * rotationMatrix * partMatrix;
@@ -1642,7 +1641,7 @@ void model_A0() {
 	glDrawArrays(GL_TRIANGLES, 0, 36);
 
 	//vertical right 2
-	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 4.0f, 0.5f));
+	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 4.0f, 2.0f));
 	translationMatrix = glm::translate(glm::mat4(1.0f), glm::vec3(-0.58f, 0.21f, 0.0f));
 	partMatrix = translationMatrix * scalingMatrix;
 	worldMatrix = modelTranslationMatrix * modelScalingMatrix * rotationMatrix * partMatrix;
@@ -1663,7 +1662,7 @@ void model_L0() {
 	// add offset of 0.05 for spacing 
 
 	//vertical left 1
-	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 4.0f, 0.5f));
+	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 4.0f, 2.0f));
 	translationMatrix = glm::translate(glm::mat4(1.0f), glm::vec3(-0.43f, 0.0f, 0.0f));
 	partMatrix = translationMatrix * scalingMatrix;
 	worldMatrix = modelTranslationMatrix * modelScalingMatrix * rotationMatrix * partMatrix;
@@ -1671,7 +1670,7 @@ void model_L0() {
 	glDrawArrays(GL_TRIANGLES, 0, 36);
 
 	//vertical left 2
-	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 4.0f, 0.5f));
+	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 4.0f, 2.0f));
 	translationMatrix = glm::translate(glm::mat4(1.0f), glm::vec3(-0.43f, 0.21f, 0.0f));
 	partMatrix = translationMatrix * scalingMatrix;
 	worldMatrix = modelTranslationMatrix * modelScalingMatrix * rotationMatrix * partMatrix;
@@ -1679,7 +1678,7 @@ void model_L0() {
 	glDrawArrays(GL_TRIANGLES, 0, 36);
 
 	//bottom 
-	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(2.6f, 2.0f, 0.5f));
+	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(2.6f, 2.0f, 2.0f));
 	translationMatrix = glm::translate(glm::mat4(1.0f), glm::vec3(-0.32f, 0.0f, 0.0f));
 	partMatrix = translationMatrix * scalingMatrix;
 	worldMatrix = modelTranslationMatrix * modelScalingMatrix * rotationMatrix * partMatrix;
@@ -1699,7 +1698,7 @@ void model_A1() {
 	// beginning of letter A1
 
 	//vertical left 1
-	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 4.0f, 0.5f));
+	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 4.0f, 2.0f));
 	translationMatrix = glm::translate(glm::mat4(1.0f), glm::vec3(0.05f, 0.0f, 0.0f));
 	partMatrix = translationMatrix * scalingMatrix;
 	worldMatrix = modelTranslationMatrix * modelScalingMatrix * rotationMatrix * partMatrix;
@@ -1707,7 +1706,7 @@ void model_A1() {
 	glDrawArrays(GL_TRIANGLES, 0, 36);
 
 	//vertical left 2
-	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 4.0f, 0.5f));
+	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 4.0f, 2.0f));
 	translationMatrix = glm::translate(glm::mat4(1.0f), glm::vec3(0.05f, 0.21f, 0.0f));
 	partMatrix = translationMatrix * scalingMatrix;
 	worldMatrix = modelTranslationMatrix * modelScalingMatrix * rotationMatrix * partMatrix;
@@ -1715,7 +1714,7 @@ void model_A1() {
 	glDrawArrays(GL_TRIANGLES, 0, 36);
 
 	//top 
-	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(2.0f, 2.0f, 0.5f));
+	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(2.0f, 2.0f, 2.0f));
 	translationMatrix = glm::translate(glm::mat4(1.0f), glm::vec3(0.16f, 0.36f, 0.0f));
 	partMatrix = translationMatrix * scalingMatrix;
 	worldMatrix = modelTranslationMatrix * modelScalingMatrix * rotationMatrix * partMatrix;
@@ -1723,7 +1722,7 @@ void model_A1() {
 	glDrawArrays(GL_TRIANGLES, 0, 36);
 
 	//middle 
-	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(2.0f, 2.0f, 0.5f));
+	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(2.0f, 2.0f, 2.0f));
 	translationMatrix = glm::translate(glm::mat4(1.0f), glm::vec3(0.16f, 0.16f, 0.0f));
 	partMatrix = translationMatrix * scalingMatrix;
 	worldMatrix = modelTranslationMatrix * modelScalingMatrix * rotationMatrix * partMatrix;
@@ -1731,7 +1730,7 @@ void model_A1() {
 	glDrawArrays(GL_TRIANGLES, 0, 36);
 
 	//vertical right 1
-	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 4.0f, 0.5f));;
+	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 4.0f, 2.0f));;
 	translationMatrix = glm::translate(glm::mat4(1.0f), glm::vec3(0.37f, 0.0f, 0.0f));
 	partMatrix = translationMatrix * scalingMatrix;
 	worldMatrix = modelTranslationMatrix * modelScalingMatrix * rotationMatrix * partMatrix;
@@ -1739,7 +1738,7 @@ void model_A1() {
 	glDrawArrays(GL_TRIANGLES, 0, 36);
 
 	//vertical right 2
-	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 4.0f, 0.5f));
+	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 4.0f, 2.0f));
 	translationMatrix = glm::translate(glm::mat4(1.0f), glm::vec3(0.37f, 0.21f, 0.0f));
 	partMatrix = translationMatrix * scalingMatrix;
 	worldMatrix = modelTranslationMatrix * modelScalingMatrix * rotationMatrix * partMatrix;
@@ -1760,7 +1759,7 @@ void model_L1() {
 	// add offset of 0.05 for spacing 
 
 	//vertical left 1
-	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 4.0f, 0.5f));
+	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 4.0f, 2.0f));
 	translationMatrix = glm::translate(glm::mat4(1.0f), glm::vec3(0.52f, 0.0f, 0.0f));
 	partMatrix = translationMatrix * scalingMatrix;
 	worldMatrix = modelTranslationMatrix * modelScalingMatrix * rotationMatrix * partMatrix;
@@ -1768,7 +1767,7 @@ void model_L1() {
 	glDrawArrays(GL_TRIANGLES, 0, 36);
 
 	//vertical left 2
-	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 4.0f, 0.5f));
+	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 4.0f, 2.0f));
 	translationMatrix = glm::translate(glm::mat4(1.0f), glm::vec3(0.52f, 0.21f, 0.0f));
 	partMatrix = translationMatrix * scalingMatrix;
 	worldMatrix = modelTranslationMatrix * modelScalingMatrix * rotationMatrix * partMatrix;
@@ -1776,7 +1775,7 @@ void model_L1() {
 	glDrawArrays(GL_TRIANGLES, 0, 36);
 
 	//bottom 
-	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(2.6f, 2.0f, 0.5f));
+	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(2.6f, 2.0f, 2.0f));
 	translationMatrix = glm::translate(glm::mat4(1.0f), glm::vec3(0.63f, 0.0f, 0.0f));
 	partMatrix = translationMatrix * scalingMatrix;
 	worldMatrix = modelTranslationMatrix * modelScalingMatrix * rotationMatrix * partMatrix;
@@ -1797,7 +1796,7 @@ void model_I() {
 	// add offset of 0.05 for spacing 
 
 	//vertical left 1
-	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 4.0f, 0.5f));
+	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 4.0f, 2.0f));
 	translationMatrix = glm::translate(glm::mat4(1.0f), glm::vec3(0.94f, 0.0f, 0.0f));
 	partMatrix = translationMatrix * scalingMatrix;
 	worldMatrix = modelTranslationMatrix * modelScalingMatrix * rotationMatrix * partMatrix;
@@ -1805,7 +1804,7 @@ void model_I() {
 	glDrawArrays(GL_TRIANGLES, 0, 36);
 
 	//vertical left 2
-	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 4.0f, 0.5f));
+	scalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 4.0f, 2.0f));
 	translationMatrix = glm::translate(glm::mat4(1.0f), glm::vec3(0.94f, 0.21f, 0.0f));
 	partMatrix = translationMatrix * scalingMatrix;
 	worldMatrix = modelTranslationMatrix * modelScalingMatrix * rotationMatrix * partMatrix;
